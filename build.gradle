@@ -1,0 +1,17 @@
+plugins {
+    id 'java'
+    id 'org.teavm' version '0.10.0'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.teavm:teavm-core:0.10.0'
+}
+
+teavm {
+    targetDirectory = file('docs')  // GitHub Pages looks here
+    mainClass = 'com.example.pacman.Main'
+}
