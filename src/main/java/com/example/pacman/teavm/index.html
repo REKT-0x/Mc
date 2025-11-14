@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Custom Pac-Man</title>
+    <style>
+        body { font-family: Arial; text-align: center; background: #111; color: white; }
+        canvas { border: 2px solid yellow; margin: 20px; background: #000; }
+        input, button { margin: 10px; padding: 10px; }
+    </style>
+</head>
+<body>
+    <h1>Custom Character Pac-Man</h1>
+    <p>Upload your image to play as yourself!</p>
+    <input type="file" id="imageUpload" accept="image/*" />
+    <br/>
+    <canvas id="gameCanvas" width="400" height="320"></canvas>
+    <div id="score">Score: 0</div>
+    <p>Use arrow keys to move</p>
+
+    <script src="teavm.js"></script>
+</body>
+</html>
